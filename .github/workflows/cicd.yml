@@ -1,9 +1,12 @@
-name:hello-world
-'on':push
+name: hello-world
+on: 
+  push:
+    branches:
+      - master  # Optionally specify the branch
+
 jobs:
   my-jobs:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      -name:my-steps
-      run:echo "hello world"
-
+      - name: my-steps  # Add a space after the dash (-)
+        run: echo "hello world"
