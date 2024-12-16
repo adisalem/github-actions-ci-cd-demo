@@ -1,8 +1,6 @@
 name: hello-world
 on: 
   push:
-    branches:
-      - master  # Optionally specify the branch
 
 jobs:
   my-jobs:
